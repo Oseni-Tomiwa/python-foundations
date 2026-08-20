@@ -8,3 +8,14 @@
 # print(study_session["hours"])
 
 # Adding dictionary data
+
+study_session = {
+    "topic": "Python",
+    "hours": 3,
+    "completed": True
+}
+
+study_session["hours"] = 5
+study_session["target_hours"] = 5
+
+print(study_session)
