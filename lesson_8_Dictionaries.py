@@ -19,3 +19,7 @@ study_session["hours"] = 5
 study_session["target_hours"] = 5
 
 print(study_session)
+
+# study_session["hours"]       # read a value
+# study_session["hours"] = 5   # update a value
+# study_session["new_key"] = "value"  # add a new value
