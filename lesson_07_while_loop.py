@@ -7,11 +7,11 @@
 
 # A while loop repeats while a condition remains true.
 
-completed_hours = 0
-target_hours = 5
-while completed_hours < target_hours:
-    completed_hours += 1
-    print(f"Study hour logged: {completed_hours}")
+# completed_hours = 0
+# target_hours = 5
+# while completed_hours < target_hours:
+#     completed_hours += 1
+#     print(f"Study hour logged: {completed_hours}")
 
 # Output:
 
@@ -39,3 +39,17 @@ while completed_hours < target_hours:
 # Control + C
 
 # Use while when you don’t know exactly how many repetitions are needed—for example, retrying a failed message delivery or waiting for a background AI job to finish. For a known list of documents, use for.
+
+
+target_hours = int(input("What is your study target today? "))
+
+if target_hours <= 0:
+    print("Study target must be greater than zero.")
+else:
+    completed_hours = 0
+
+    while completed_hours < target_hours:
+        completed_hours += 1
+        print(f"Hour {completed_hours} logged.")
+
+    print("Daily study target completed.")
